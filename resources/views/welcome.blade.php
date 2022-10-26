@@ -35,10 +35,9 @@
                         title: '{{$agendamento->name}}',
                         start: '{{$agendamento->time}}T{{$agendamento->start_time}}',
                         end: '{{$agendamento->time}}T{{$agendamento->end_time}}',
-                        display: 'inverse-background',
                         color: '#ffff00',
                         textColor: "#000",
-                        overlap: false,
+                        display: 'inverse-background'
                     },
                     @endforeach {
 
@@ -133,9 +132,11 @@
 
         </div>
     </div>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Criar atividade esportiva
-    </button>
+    <center>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Criar atividade esportiva
+        </button>
+    </center>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script>
         const range = document.querySelector("#customRange2label");
